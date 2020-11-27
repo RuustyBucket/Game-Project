@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Kangaroo" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the Kangaroo wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="move(2)" expression-java="move(2)" enable="true"/>
+                <if condition="Greenfoot.getRandomNumber(25)==1" condition-java="Greenfoot.getRandomNumber(25) == 1" enable="true">
+                    <ifStatements>
+                        <call expression="turn(180)" expression-java="turn(180)" enable="true"/>
+                        <call expression="turnRight()" expression-java="turnRight()" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <comment xml:space="preserve">turn the kangaroo 180 also flips the image I dont know how to fix that</comment>
+        <method access="public" type="void" type-java="void" name="turnRight" enable="true">
+            <javadoc xml:space="preserve">To make the kangaroo look to the right</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="GreenfootImage" type-java="GreenfootImage" name="myImage" value="new GreenfootImage(&quot;flipmafiakangaroo.png&quot;)" value-java=" new GreenfootImage(&quot;flipmafiakangaroo.png&quot;)" enable="true"/>
+                <call expression="setImage(myImage)" expression-java="setImage(myImage)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>

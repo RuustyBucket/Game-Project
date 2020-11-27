@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TrappedWombat
+comment0.text=\r\n\ \r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ When\ the\ Wombat\ touches\ the\ trapped\ wombat\ call\ the\ win\ screen\r\n
+comment2.params=
+comment2.target=boolean\ isGameWon()
+comment2.text=\r\n\ \r\n
+comment3.params=
+comment3.target=void\ transitionToGameWin()
+comment3.text=\r\n\ \r\n
+numComments=4

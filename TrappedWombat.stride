@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="TrappedWombat" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">When the Wombat touches the trapped wombat call the win screen</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="isGameWon()" condition-java="isGameWon()" enable="true">
+                    <ifStatements>
+                        <call expression="transitionToGameWin()" expression-java="transitionToGameWin()" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="boolean" type-java="boolean" name="isGameWon" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="World" type-java="World" name="world" value="getWorld()" value-java="getWorld()" enable="true"/>
+                <if condition="isTouching(PlayableWombat.class)" condition-java="isTouching(PlayableWombat.class)" enable="true">
+                    <ifStatements>
+                        <return value="true" value-java="true" enable="true"/>
+                    </ifStatements>
+                    <else>
+                        <return value="false" value-java="false" enable="true"/>
+                    </else>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="transitionToGameWin" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="World" type-java="World" name="WinScreen" value="new WinScreen()" value-java=" new WinScreen()" enable="true"/>
+                <call expression="Greenfoot.setWorld(WinScreen)" expression-java="Greenfoot.setWorld(WinScreen)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
