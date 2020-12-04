@@ -5,7 +5,7 @@ import greenfoot.*;
 /**
  * 
  */
-public class TrappedWombat extends Actor
+public class TrappedWombat extends Simulation
 {
 
     /**
