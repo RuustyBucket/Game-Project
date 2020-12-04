@@ -2,12 +2,8 @@
 class.Bullet.image=bullet.png
 class.GameLostScreen.image=space1.jpg
 class.Kangaroo.image=Scaled\ Mafia\ Kangaroo.png
-<<<<<<< HEAD
-class.PlayableWombat.image=ScaledAussieWombat.png
-=======
 class.MyWorld.image=Shitty\ Background.jpg
 class.PlayableWombat.image=Scaled\ Aussie\ Wombat.png
->>>>>>> 78e32ea0696c5b4377c98477da85c26a844e8c3e
 class.StartScreen.image=Splash\ Screen.jpg
 class.TrappedWombat.image=TrappedWombat.png
 class.WinScreen.image=space1.jpg
@@ -17,19 +13,11 @@ dependency1.type=UsesDependency
 dependency2.from=TrappedWombat
 dependency2.to=PlayableWombat
 dependency2.type=UsesDependency
-<<<<<<< HEAD
-editor.fx.0.height=1096
-editor.fx.0.width=1936
-editor.fx.0.x=-8
-editor.fx.0.y=-8
-height=985
-=======
 editor.fx.0.height=739
 editor.fx.0.width=816
-editor.fx.0.x=552
-editor.fx.0.y=100
+editor.fx.0.x=329
+editor.fx.0.y=248
 height=1056
->>>>>>> 78e32ea0696c5b4377c98477da85c26a844e8c3e
 package.numDependencies=2
 package.numTargets=8
 project.charset=UTF-8
@@ -105,10 +93,5 @@ target8.y=0
 version=3.0.0
 width=1786
 world.lastInstantiated=MyWorld
-<<<<<<< HEAD
-xPosition=65
-yPosition=49
-=======
 xPosition=5
 yPosition=0
->>>>>>> 3bdc02422d6e186a32f62c2cf7ccc51c47b1320e

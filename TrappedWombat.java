@@ -14,6 +14,7 @@ public class TrappedWombat extends Actor
     public void act()
     {
         if (isGameWon()) {
+            stop();
             transitionToGameWin();
         }
     }
@@ -39,5 +40,10 @@ public class TrappedWombat extends Actor
     {
         World WinScreen =  new  WinScreen();
         Greenfoot.setWorld(WinScreen);
+    }
+    
+    public void stop()
+    {
+        
     }
 }
