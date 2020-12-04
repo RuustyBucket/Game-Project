@@ -15,4 +15,15 @@ public class StartScreen extends World
     {
         super(1500, 800, 1);
     }
+    public void act()
+    {
+        GreenfootImage image = new GreenfootImage("StartMenu.png");
+        if (Greenfoot.isKeyDown("space"))
+        {
+            transitionToWorld(new MyWorld()); 
+
+        }
+        music = new GreenfootSound("StartMenu.wav");
+        setMusic(music);
+    }
 }

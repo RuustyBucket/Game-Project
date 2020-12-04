@@ -3,7 +3,7 @@ import java.util.*;
 import greenfoot.*;
 
 /**
- * 
+ *
  */
 public class MyWorld extends World
 {
@@ -16,6 +16,6 @@ public class MyWorld extends World
         super(1500, 800, 1);
         backgroundMusic.playLoop();
     }
-    
-    
+
+
 }
