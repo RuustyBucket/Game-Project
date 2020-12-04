@@ -3,9 +3,9 @@ import java.util.*;
 import greenfoot.*;
 
 /**
- * 
+ *
  */
-public class PlayableWombat extends Actor
+public class PlayableWombat extends Simulation
 {
 
     /* WARNING: This file is auto-generated and any changes to it will be overwritten*/
@@ -13,17 +13,17 @@ public class PlayableWombat extends Actor
     /**
      * Act - do whatever the PlayableWombat wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act()
-    {
-        move(7);
+    public void act() {
+        move();
     }
+
+
 
     /**
      * To make the wombat movee
      */
-    public void move(int moveAmt)
-    {
-       if (Greenfoot.isKeyDown("w")) {
+    public void move() {
+        if (Greenfoot.isKeyDown("w")) {
             setImage("ScaledAussieWombatForWMovement110.png");
             int x = getX();
             int ny = getY() - 7;
