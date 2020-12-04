@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
@@ -28,7 +27,7 @@ public class Kangaroo extends Actor
      */
     public void turnRight()
     {
-        GreenfootImage myImage =  new GreenfootImage("flipmafiakangaroo.png");
+        GreenfootImage myImage =  new  GreenfootImage("flipmafiakangaroo.png");
         setImage(myImage);
     }
 }
