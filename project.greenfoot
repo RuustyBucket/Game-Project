@@ -21,10 +21,17 @@ dependency4.to=PlayableWombat
 dependency4.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
+<<<<<<< Updated upstream
 editor.fx.0.x=532
 editor.fx.0.y=36
 height=838
 package.numDependencies=4
+=======
+editor.fx.0.x=596
+editor.fx.0.y=54
+height=881
+package.numDependencies=2
+>>>>>>> Stashed changes
 package.numTargets=9
 project.charset=UTF-8
 publish.hasSource=false
@@ -104,7 +111,14 @@ target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< Updated upstream
 width=1550
 world.lastInstantiated=GameLostScreen
 xPosition=0
 yPosition=0
+=======
+width=1553
+world.lastInstantiated=StartScreen
+xPosition=0
+yPosition=56
+>>>>>>> Stashed changes

@@ -21,8 +21,15 @@ public class StartScreen extends World
   {
     if (Greenfoot.isKeyDown("space"))
     {
+<<<<<<< Updated upstream
        World MyWorld = new MyWorld();
        Greenfoot.setWorld(MyWorld);
+=======
+        GreenfootImage image = new GreenfootImage("StartMenu.png");
+       
+       
+>>>>>>> Stashed changes
     }
   }
 }
+
