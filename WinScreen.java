@@ -24,7 +24,7 @@ public class WinScreen extends World
     public void showWinningText(String message, int x, int y)
     {
         GreenfootImage bg = getBackground();
-        Font font =  new  Font(50);
+        Font font =  new Font(50);
         bg.setFont(font);
         bg.setColor(Color.WHITE);
         bg.drawString(message, x, y);

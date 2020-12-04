@@ -28,7 +28,7 @@ public class Kangaroo extends Actor
      */
     public void turnRight()
     {
-        GreenfootImage myImage =  new GreenfootImage("flipmafiakangaroo.png");
+        GreenfootImage myImage =  new  GreenfootImage("flipmafiakangaroo.png");
         setImage(myImage);
     }
 }
