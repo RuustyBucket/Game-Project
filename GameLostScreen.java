@@ -15,6 +15,7 @@ public class GameLostScreen extends World
     {
         super(1500, 800, 1);
         showLosingScreen("You Lose!", 740, 400);
+        GreenfootImage image = new GreenfootImage("EndMenu.png");
     }
 
     /**
