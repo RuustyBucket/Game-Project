@@ -5,7 +5,7 @@ import greenfoot.*;
 /**
  * 
  */
-public class MyWorld extends World
+public class MyWorld extends SimulationWorld
 {
 
     /**
@@ -13,6 +13,6 @@ public class MyWorld extends World
      */
     public MyWorld()
     {
-        super(1200, 700, 1);
+        super("",1500, 800, new Point2D(0.0,0.0), 1);
     }
 }

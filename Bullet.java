@@ -1,3 +1,4 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -8,12 +9,34 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bullet extends Simulation
 {
-    /**
-     * Act - do whatever the Bullet wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
+    private int life = 1;
+
+    private int damage = 1;
+    
+    public Bullet() {
+    }
+     public Bullet(Vector2D speed, int rotation)
     {
-        // Add your action code here.
+        super(speed);
+        setRotation(rotation);
+        increaseSpeed(new Vector2D(rotation, 15));
+        //Greenfoot.playSound("EnergyGun.wav");
     }    
+        
+    public void act() {
+        
+        if(life <= 0) {
+            getWorld().removeObject(this);
+        } 
+        else {
+            move();
+            PlayableWombat kang = (PlayableWombat) getOneIntersectingObject(PlayableWombat.class);
+            if (kang != null) {
+                getWorld().removeObject(this);
+            }
+            else {
+                life--;
+            }
+        }
+    }
 }
