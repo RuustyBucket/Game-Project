@@ -16,6 +16,7 @@ public class WinScreen extends World
     {
         super(1500, 800, 1);
         showWinningText("You Win!", 650, 400);
+        Greenfoot.playSound("YouWin.mp3");
     }
 
     /**
@@ -24,7 +25,7 @@ public class WinScreen extends World
     public void showWinningText(String message, int x, int y)
     {
         GreenfootImage bg = getBackground();
-        Font font =  new Font(50);
+        Font font = new Font(50);
         bg.setFont(font);
         bg.setColor(Color.WHITE);
         bg.drawString(message, x, y);

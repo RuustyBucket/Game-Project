@@ -3,7 +3,7 @@ import java.util.*;
 import greenfoot.*;
 
 /**
- * 
+ *
  */
 public class PlayableWombat extends Simulation
 {
@@ -16,11 +16,11 @@ public class PlayableWombat extends Simulation
     public void act() {
         move();
     }
-    
-    
-    
+
+
+
     /**
-     * To make the wombat moving
+     * To make the wombat movee
      */
     public void move() {
         if (Greenfoot.isKeyDown("w")) {
@@ -29,19 +29,19 @@ public class PlayableWombat extends Simulation
             int ny = getY() - 7;
             setLocation(x, ny);
         }
-        if (Greenfoot.isKeyDown("a")) {
+       if (Greenfoot.isKeyDown("a")) {
             setImage("Scaled Aussie Wombat Flipped111.png");
             int x = getX() - 7;
             int ny = getY();
             setLocation(x, ny);
         }
-        if (Greenfoot.isKeyDown("s")) {
+       if (Greenfoot.isKeyDown("s")) {
             setImage("Scaled Aussie Wombat For D Movement110.png");
             int x = getX();
             int ny = getY() + 7;
             setLocation(x, ny);
         }
-        if (Greenfoot.isKeyDown("d")) {
+       if (Greenfoot.isKeyDown("d")) {
             setImage("ScaledAussieWombat110.png");
             int x = getX() + 7;
             int ny = getY();
