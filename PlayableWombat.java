@@ -15,37 +15,37 @@ public class PlayableWombat extends Actor
      */
     public void act()
     {
-        move();
+        move(7);
     }
 
     /**
-     * To make the wombat moving
+     * To make the wombat movee
      */
-    public void move()
+    public void move(int moveAmt)
     {
-        if (Greenfoot.isKeyDown("w")) {
+       if (Greenfoot.isKeyDown("w")) {
             setImage("ScaledAussieWombatForWMovement110.png");
             int x = getX();
-            int ny = getY()-7;
-            setLocation(x,ny);
+            int ny = getY() - 7;
+            setLocation(x, ny);
         }
-        if (Greenfoot.isKeyDown("a")) {
+       if (Greenfoot.isKeyDown("a")) {
             setImage("Scaled Aussie Wombat Flipped111.png");
-            int x = getX()-7;
+            int x = getX() - 7;
             int ny = getY();
-            setLocation(x,ny);
+            setLocation(x, ny);
         }
-        if (Greenfoot.isKeyDown("s")) {
+       if (Greenfoot.isKeyDown("s")) {
             setImage("Scaled Aussie Wombat For D Movement110.png");
             int x = getX();
-            int ny = getY()+7;
-            setLocation(x,ny);
+            int ny = getY() + 7;
+            setLocation(x, ny);
         }
-        if (Greenfoot.isKeyDown("d")) {
+       if (Greenfoot.isKeyDown("d")) {
             setImage("ScaledAussieWombat110.png");
-            int x = getX()+7;
+            int x = getX() + 7;
             int ny = getY();
-            setLocation(x,ny);
+            setLocation(x, ny);
         }
     }
 }

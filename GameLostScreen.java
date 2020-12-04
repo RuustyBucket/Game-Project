@@ -16,6 +16,7 @@ public class GameLostScreen extends World
         super(1500, 800, 1);
         showLosingScreen("You Lose!", 740, 400);
         GreenfootImage image = new GreenfootImage("EndMenu.png");
+        Greenfoot.playSound("YouLose.mp3");
     }
 
     /**
@@ -24,7 +25,7 @@ public class GameLostScreen extends World
     public void showLosingScreen(String message, int x, int y)
     {
         GreenfootImage bg = getBackground();
-        Font font =  new Font(50);
+        Font font = new Font(50);
         bg.setFont(font);
         bg.setColor(Color.WHITE);
         bg.drawString(message, x, y);

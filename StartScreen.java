@@ -7,7 +7,7 @@ import greenfoot.*;
  */
 public class StartScreen extends World
 {
-  GreenfootSound music = new GreenfootSound("StartMenu.wav");
+  GreenfootSound music = new GreenfootSound("StartMenu.mp3");
   /**
   * Constructor for objects of class StartScreen.
   */
@@ -21,8 +21,12 @@ public class StartScreen extends World
   {
     if (Greenfoot.isKeyDown("space"))
     {
+       music.stop();
        World MyWorld = new MyWorld();
        Greenfoot.setWorld(MyWorld);
     }
+  }
+  public void stop() {
+      
   }
 }

@@ -7,7 +7,7 @@ import greenfoot.*;
  */
 public class MyWorld extends World
 {
-    GreenfootSound backgroundMusic = new GreenfootSound("Background music 1.wav");
+    GreenfootSound backgroundMusic = new GreenfootSound("BackgroundMusic1.mp3");
     /**
      * Constructor for objects of class MyWorld.
      */
