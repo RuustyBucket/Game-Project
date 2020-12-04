@@ -14,7 +14,7 @@ public class Kangaroo extends Actor
     public void act()
     {
         move(2);
-        if (Greenfoot.getRandomNumber(25) == 1) {
+        if (Greenfoot.getRandomNumber(40) == 1) {
             turn(180);
             turnRight();
         }
@@ -27,7 +27,7 @@ public class Kangaroo extends Actor
      */
     public void turnRight()
     {
-        GreenfootImage myImage =  new  GreenfootImage("flipmafiakangaroo.png");
+        GreenfootImage myImage =  new  GreenfootImage("flipmafiakangaroo110.png");
         setImage(myImage);
     }
 }
