@@ -14,19 +14,15 @@ public class GameLostScreen extends World
     public GameLostScreen()
     {
         super(1500, 800, 1);
-        showLosingScreen("You Lose!", 740, 400);
-        GreenfootImage image = new GreenfootImage("EndMenu.png");
     }
 
-    /**
-     * Show the losing screen
-     */
-    public void showLosingScreen(String message, int x, int y)
+    
+    public void act()
     {
-        GreenfootImage bg = getBackground();
-        Font font =  new Font(50);
-        bg.setFont(font);
-        bg.setColor(Color.WHITE);
-        bg.drawString(message, x, y);
+       if (Greenfoot.isKeyDown("space"))
+       {
+       World StartScreen = new StartScreen();
+       Greenfoot.setWorld(StartScreen);
+       }
     }
 }
