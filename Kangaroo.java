@@ -18,17 +18,14 @@ public class Kangaroo extends Simulation
     {
        
        if (Greenfoot.getRandomNumber(50) == 1) {
-            setImage("Scaled Aussie Wombat Flipped111.png");
+            setImage("Scaled Mafia Kangaroo110.png");
             int x = getX() - 7;
             int ny = getY();
             setLocation(x, ny);
         }
     
-        if (Greenfoot.getRandomNumber(2) == 1) {
-            Bullet bullet = new Bullet();
-            SimulationWorld world = (SimulationWorld) getWorld();
-            world.addObject(bullet, this.getX() + 62, this.getY() - 10);
-            bullet.setRotation(90);
+       if (Greenfoot.getRandomNumber(2) == 1) {
+           fire();
         }
     }
     

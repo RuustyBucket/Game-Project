@@ -5,7 +5,7 @@ import greenfoot.*;
 /**
  *
  */
-public class MyWorld extends SimulationWorld
+public class MyWorld extends World
 {
     GreenfootSound backgroundMusic = new GreenfootSound("Background music 1.wav");
     /**
@@ -13,13 +13,10 @@ public class MyWorld extends SimulationWorld
      */
     public MyWorld()
     {
-<<<<<<< HEAD
-        super("",1500, 800, new Point2D(0.0,0.0), 1);
-=======
         super(1500, 800, 1);
         backgroundMusic.playLoop();
       
->>>>>>> e20a28dfc0a23091d16b44ac7ce86d446d463277
+
     }
 
 }

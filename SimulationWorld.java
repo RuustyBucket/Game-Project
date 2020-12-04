@@ -149,31 +149,9 @@ public class SimulationWorld extends World
         return toWorldMatrix.transform(windowCoord);
     }
     
-    public void scaleActors()
-    {
-        List<Simulation> actors = getObjects(SimulationActor.class);
-        
-        for (int i=0; i<actors.size(); i++)
-        {
-            Simulation actor = actors.get(i);
-            actor.scaleImage(getZoomRatio());
-        }
-    }
-    
     public double getZoomRatio()
     {
         return DEFAULT_CAMERA_WIDTH / cameraWidth;
     }
     
-    public void addObject(Actor a, int x, int y)
-    {
-        super.addObject(a,x,y);
-        
-        // Set World Position from Window Position for Simulation Actors
-        if (a instanceof Simulation)
-        {
-            Simulation sa = (Simulation) a;
-            sa.setPosition(windowToWorld(new Point2D(x, y)));
-        }            
-    }
 }
