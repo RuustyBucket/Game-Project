@@ -105,5 +105,10 @@ target8.y=0
 version=3.0.0
 width=1786
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=65
 yPosition=49
+=======
+xPosition=5
+yPosition=0
+>>>>>>> 3bdc02422d6e186a32f62c2cf7ccc51c47b1320e
