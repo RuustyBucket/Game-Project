@@ -16,17 +16,23 @@ public class Kangaroo extends Simulation
      */
     public void act()
     {
-       
-       if (Greenfoot.getRandomNumber(50) == 1) {
-            setImage("Scaled Mafia Kangaroo110.png");
-            int x = getX() - 7;
-            int ny = getY();
-            setLocation(x, ny);
+        move(7);
+        if (Greenfoot.getRandomNumber(50) == 1) {
+            turn(180);
+            setImage("flipmafiakangaroo110.png");
+        }
+        else if(Greenfoot.getRandomNumber(50) == 1) {
+               turn(-180);
+               
         }
     
-       if (Greenfoot.getRandomNumber(2) == 1) {
+        if (Greenfoot.getRandomNumber(2) == 1) {
            fire();
         }
+    }
+    
+    public Kangaroo() { 
+        ReloadTime = 20;
     }
     
     public int getShotsFired() {
@@ -52,7 +58,6 @@ public class Kangaroo extends Simulation
             getWorld().addObject(b, getX(), getY());
             b.move();
             shotsFired++;
-            reloadDelay = 0;
         }
     }
 }   

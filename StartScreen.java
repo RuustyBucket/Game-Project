@@ -19,16 +19,10 @@ public class StartScreen extends World
   }
   public void act()
   {
-    if (Greenfoot.isKeyDown("space"))
-    {
-<<<<<<< Updated upstream
-       World MyWorld = new MyWorld();
-       Greenfoot.setWorld(MyWorld);
-=======
-        GreenfootImage image = new GreenfootImage("StartMenu.png");
-       
-       
->>>>>>> Stashed changes
+    if (Greenfoot.isKeyDown("space")){   
+        World MyWorld = new MyWorld();
+        Greenfoot.setWorld(MyWorld);
+        music.stop();
     }
   }
 }
