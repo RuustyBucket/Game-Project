@@ -1,9 +1,9 @@
     import lang.stride.*;
     import java.util.*;
     import greenfoot.*;
-    
+
     /**
-     * 
+     *
      */
 public class Kangaroo extends Simulation
 {
@@ -29,18 +29,18 @@ public class Kangaroo extends Simulation
            fire();
         }
     }
-   
+
     /* turn the kangaroo 180 also flips the image I dont know how to fix that*/
 
-    
+
     public void turnRight() {
        GreenfootImage myImage =  new  GreenfootImage("flipmafiakangaroo95.png");
        setImage(myImage);
     }
-    
+
     public void fire() {
         Bullet b = new Bullet(getMovement().copy(), getRotation());
         getWorld().addObject(b, getX(), getY());
         b.move();
     }
-}   
+}

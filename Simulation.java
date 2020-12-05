@@ -1,7 +1,7 @@
 import greenfoot.*; 
 public abstract class Simulation extends Actor
 {
-    private Vector2D movement = new Vector2D(0,0);
+    private Vector2D movement = new Vector2D();
     
     private double x = 0;
     private double y = 0;
@@ -43,7 +43,7 @@ public abstract class Simulation extends Actor
     }
 
     public void increaseSpeed(Vector2D s) {
-        movement.add(s,s);
+        movement.add(s);
     }
     
     public Vector2D getMovement() {

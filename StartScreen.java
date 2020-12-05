@@ -3,7 +3,7 @@ import java.util.*;
 import greenfoot.*;
 
 /**
- * 
+ *
  */
 public class StartScreen extends World {
   GreenfootSound music = new GreenfootSound("StartMenu.mp3");
@@ -23,4 +23,3 @@ public class StartScreen extends World {
     }
   }
 }
-

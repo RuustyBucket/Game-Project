@@ -9,12 +9,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bullet extends Simulation
 {
-    private int life = 1;
+    private int life = 30;
 
-    private int damage = 1;
+    private int damage = 16;
     
     public Bullet() {
     }
+    
      public Bullet(Vector2D speed, int rotation)
     {
         super(speed);
