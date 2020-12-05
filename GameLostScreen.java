@@ -21,8 +21,8 @@ public class GameLostScreen extends World
     {
        if (Greenfoot.isKeyDown("space"))
        {
-       World StartScreen = new StartScreen();
-       Greenfoot.setWorld(StartScreen);
+          World StartScreen = new StartScreen();
+          Greenfoot.setWorld(StartScreen);
        }
     }
 }

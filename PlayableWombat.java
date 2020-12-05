@@ -17,32 +17,30 @@ public class PlayableWombat extends Simulation
         move();
     }
 
-
-
     /**
      * To make the wombat movee
      */
     public void move() {
-        if (Greenfoot.isKeyDown("w")) {
-            setImage("ScaledAussieWombatForWMovement110.png");
+       if (Greenfoot.isKeyDown("w")) {
+            setImage("ScaledAussieWombatForWMovement85.png");
             int x = getX();
             int ny = getY() - 7;
             setLocation(x, ny);
-        }
+       }
        if (Greenfoot.isKeyDown("a")) {
-            setImage("Scaled Aussie Wombat Flipped111.png");
+            setImage("Scaled Aussie Wombat Flipped85.png");
             int x = getX() - 7;
             int ny = getY();
             setLocation(x, ny);
         }
        if (Greenfoot.isKeyDown("s")) {
-            setImage("Scaled Aussie Wombat For D Movement110.png");
+            setImage("Scaled Aussie Wombat For D Movement85.png");
             int x = getX();
             int ny = getY() + 7;
             setLocation(x, ny);
         }
        if (Greenfoot.isKeyDown("d")) {
-            setImage("ScaledAussieWombat110.png");
+            setImage("ScaledAussieWombat85.png");
             int x = getX() + 7;
             int ny = getY();
             setLocation(x, ny);

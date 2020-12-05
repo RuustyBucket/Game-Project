@@ -5,30 +5,21 @@ import greenfoot.*;
 /**
  * 
  */
-public class StartScreen extends World
-{
-  GreenfootSound music = new GreenfootSound("StartMenu.wav");
+public class StartScreen extends World {
+  GreenfootSound music = new GreenfootSound("StartMenu.mp3");
   /**
   * Constructor for objects of class StartScreen.
   */
-  public StartScreen()
-  {
+  public StartScreen() {
      super(1500, 800, 1);
      music.playLoop();
      act();
   }
-  public void act()
-  {
-    if (Greenfoot.isKeyDown("space"))
-    {
-<<<<<<< Updated upstream
+  public void act() {
+    if (Greenfoot.isKeyDown("space")) {
        World MyWorld = new MyWorld();
        Greenfoot.setWorld(MyWorld);
-=======
-        GreenfootImage image = new GreenfootImage("StartMenu.png");
-       
-       
->>>>>>> Stashed changes
+       music.stop();
     }
   }
 }
