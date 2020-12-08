@@ -12,9 +12,7 @@ public class Bullet extends Simulation
     private int life = 30;
     private int damage = 16;
     public Bullet() {
-        if (isGameLost()) {
-            transitionToGameLostScreen();
-        }
+      
     }
 
     public Bullet(Vector2D speed, int rotation) {
@@ -29,23 +27,9 @@ public class Bullet extends Simulation
         if (isGameLost()) {
             stop();
             transitionToGameLost();
-        }
-        if(life <= 0) {
-            getWorld().removeObject(this);
-        }
-        else {
-            move();
-            PlayableWombat kang = (PlayableWombat) getOneIntersectingObject(PlayableWombat.class);
-            if (kang != null) {
-                getWorld().removeObject(this);
-            }
-            else {
-                life--;
-            }
-        }
-
+        }                
+        move();        
     }
-
 
     public boolean isGameLost() {
         World world = getWorld();
@@ -63,23 +47,5 @@ public class Bullet extends Simulation
     }
     public void stop() {
 
-    }
-
-    public boolean isGameLost() {
-        World world = getWorld();
-        if (isTouching(PlayableWombat.class)) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-
-    /**
-     *
-     */
-    public void transitionToGameLostScreen() {
-        World GameLostScreen =  new GameLostScreen();
-        Greenfoot.setWorld(GameLostScreen);
-    }
+    }      
 }

@@ -16,7 +16,6 @@ public class MyWorld extends World
         backgroundMusic.setVolume(50);
         backgroundMusic.playLoop();
         prepare();
-
     }
 
     /**

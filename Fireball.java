@@ -18,8 +18,5 @@ public class Fireball extends Simulation
         if (isTouching(Wall.class)) {
             getWorld().removeObject(Fireball.this);
         }
-        if (isTouching(Kangaroo.class)) {
-            
-        }
     }    
 }

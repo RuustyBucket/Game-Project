@@ -13,22 +13,11 @@ public class Kangaroo extends Simulation
        if (Greenfoot.getRandomNumber(100) == 40) {
            fire();
        }
+       if (isTouching(Kangaroo.class)) {
+            getWorld().removeObject(Kangaroo.this);
+        }
     }
-
-    public void moveForward() {
-       int x = getX();
-       int y = getY();
-       if (Greenfoot.getRandomNumber(10) == 1) {
-            setImage("Scaled Mafia Kangaroo95.png");
-            x -= 7;
-            setLocation(x, y);
-       }
-       if (isTouching(Wall.class)) {
-           turnRight();
-
-       }
-    }
-
+       
     /* turn the kangaroo 180 also flips the image I dont know how to fix that*/
 
     public void fire() {

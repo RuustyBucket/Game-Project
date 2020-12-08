@@ -18,7 +18,15 @@ public class WinScreen extends World
         showWinningText("You Win!", 650, 400);
         Greenfoot.playSound("YouWin.mp3");
     }
-
+    
+    public void act() {
+       if (Greenfoot.isKeyDown("space")) {
+           World StartScreen = new StartScreen();
+           Greenfoot.setWorld(StartScreen);
+           stop();
+       } 
+    }
+    
     /**
      * Shows winning message
      */
@@ -29,5 +37,9 @@ public class WinScreen extends World
         bg.setFont(font);
         bg.setColor(Color.WHITE);
         bg.drawString(message, x, y);
+    }
+    
+    public void stop() {
+        
     }
 }
