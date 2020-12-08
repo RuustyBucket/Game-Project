@@ -15,35 +15,42 @@ public class PlayableWombat extends Simulation
      */
     public void act() {
         move();
+        if ("space".equals(Greenfoot.getKey())) {
+            fire();
+        }
     }
 
     /**
-     * To make the wombat movee
+     * To make the wombat move      
      */
     public void move() {
+       int x = 0;
+       int y = 0;
        if (Greenfoot.isKeyDown("w")) {
             setImage("ScaledAussieWombatForWMovement85.png");
-            int x = getX();
-            int ny = getY() - 7;
-            setLocation(x, ny);
+            y -= 7;
        }
        if (Greenfoot.isKeyDown("a")) {
             setImage("Scaled Aussie Wombat Flipped85.png");
-            int x = getX() - 7;
-            int ny = getY();
-            setLocation(x, ny);
-        }
+            x -= 7;
+       }
        if (Greenfoot.isKeyDown("s")) {
             setImage("Scaled Aussie Wombat For D Movement85.png");
-            int x = getX();
-            int ny = getY() + 7;
-            setLocation(x, ny);
-        }
+            y += 7;
+       }
        if (Greenfoot.isKeyDown("d")) {
             setImage("ScaledAussieWombat85.png");
-            int x = getX() + 7;
-            int ny = getY();
-            setLocation(x, ny);
-        }
+            x += 7;
+       }
+       setLocation(getX() + x, getY() + y);
+       
+       if (isTouching(Wall.class)) {
+           setLocation(getX() - x, getY() - y);
+       }
+    }
+    
+    public void fire() {
+        Fireball fireball = new Fireball();
+        getWorld().addObject(fireball, getX(), getY());
     }
 }

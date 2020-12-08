@@ -10,14 +10,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Bullet extends Simulation
 {
     private int life = 30;
-
     private int damage = 16;
-    
     public Bullet() {
+        if (isGameLost()) {
+            transitionToGameLostScreen();
+        }
     }
     
-     public Bullet(Vector2D speed, int rotation)
-    {
+    public Bullet(Vector2D speed, int rotation) {
         super(speed);
         setRotation(rotation);
         increaseSpeed(new Vector2D(rotation, 15));
@@ -25,7 +25,6 @@ public class Bullet extends Simulation
     }    
         
     public void act() {
-        
         if(life <= 0) {
             getWorld().removeObject(this);
         } 
@@ -39,5 +38,23 @@ public class Bullet extends Simulation
                 life--;
             }
         }
+    }
+    
+    public boolean isGameLost() {
+        World world = getWorld();
+        if (isTouching(PlayableWombat.class)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /**
+     * 
+     */
+    public void transitionToGameLostScreen() {
+        World GameLostScreen =  new GameLostScreen();
+        Greenfoot.setWorld(GameLostScreen);
     }
 }

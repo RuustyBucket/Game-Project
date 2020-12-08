@@ -14,9 +14,9 @@ public class GameLostScreen extends World
     public GameLostScreen()
     {
         super(1500, 800, 1);
+        Greenfoot.playSound("YouLose.mp3");
     }
 
-    
     public void act()
     {
        if (Greenfoot.isKeyDown("space"))

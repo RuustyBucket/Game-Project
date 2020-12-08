@@ -12,6 +12,7 @@ public class StartScreen extends World {
   */
   public StartScreen() {
      super(1500, 800, 1);
+     music.setVolume(50);
      music.playLoop();
      act();
   }
