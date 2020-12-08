@@ -13,8 +13,8 @@ public class MyWorld extends World
      */
     public MyWorld() {
         super(1500, 800, 1);
-        backgroundMusic.setVolume(50);
         backgroundMusic.playLoop();
+        backgroundMusic.setVolume(50);
         prepare();
     }
 
@@ -329,6 +329,8 @@ public class MyWorld extends World
         Wall wall142 = new Wall();
         addObject(wall142,693,194);
         Wall wall143 = new Wall();
-        addObject(wall143,177,461);
+        addObject(wall143,177,461);        
+        kangaroo.setLocation(576,731);                       
+        kangaroo7.setLocation(1213,334);        
     }
 }

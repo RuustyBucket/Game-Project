@@ -7,7 +7,6 @@ import greenfoot.*;
  */
 public class GameLostScreen extends World
 {
-
     /**
      * Constructor for objects of class GameLostScreen.
      */

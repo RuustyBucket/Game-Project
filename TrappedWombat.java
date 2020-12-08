@@ -14,7 +14,7 @@ public class TrappedWombat extends Simulation
     public void act()
     {
         if (isGameWon()) {
-            stop();
+            ((MyWorld)getWorld()).backgroundMusic.stop();
             transitionToGameWin();
         }
     }

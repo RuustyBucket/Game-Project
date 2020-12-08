@@ -25,10 +25,11 @@ public class Bullet extends Simulation
 
     public void act() {
         if (isGameLost()) {
-            stop();
+            ((MyWorld)getWorld()).backgroundMusic.stop();
             transitionToGameLost();
         }                
-        move();        
+        move();  
+        border();
     }
 
     public boolean isGameLost() {
@@ -45,7 +46,14 @@ public class Bullet extends Simulation
         World GameLostScreen =  new  GameLostScreen();
         Greenfoot.setWorld(GameLostScreen);
     }
+    
     public void stop() {
 
-    }      
+    } 
+    
+    public void border() {
+        if (isAtEdge()) {
+            getWorld().removeObject(Bullet.this);
+        }
+    }
 }

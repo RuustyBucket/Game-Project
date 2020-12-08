@@ -8,15 +8,13 @@ import greenfoot.*;
  */
 public class WinScreen extends World
 {
-
     /**
      * Constructor for objects of class WinScreen.
      */
     public WinScreen()
     {
         super(1500, 800, 1);
-        showWinningText("You Win!", 650, 400);
-        Greenfoot.playSound("YouWin.mp3");
+        Greenfoot.playSound("YouWon.mp3");
     }
     
     public void act() {
@@ -27,19 +25,7 @@ public class WinScreen extends World
        } 
     }
     
-    /**
-     * Shows winning message
-     */
-    public void showWinningText(String message, int x, int y)
-    {
-        GreenfootImage bg = getBackground();
-        Font font = new Font(50);
-        bg.setFont(font);
-        bg.setColor(Color.WHITE);
-        bg.drawString(message, x, y);
-    }
-    
     public void stop() {
-        
+    
     }
 }

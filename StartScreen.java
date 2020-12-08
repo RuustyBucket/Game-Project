@@ -12,15 +12,15 @@ public class StartScreen extends World {
   */
   public StartScreen() {
      super(1500, 800, 1);
+     music.play();
      music.setVolume(50);
-     music.playLoop();
      act();
   }
   public void act() {
     if (Greenfoot.isKeyDown("space")) {
-       World MyWorld = new MyWorld();
-       Greenfoot.setWorld(MyWorld);
        music.stop();
+       World MyWorld = new MyWorld();
+       Greenfoot.setWorld(MyWorld);       
     }
   }
 }
