@@ -1,18 +1,10 @@
 #BlueJ class context
 comment0.target=Kangaroo
-comment0.text=\r\n\ \r\n
+comment0.text=\r\n\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Kangaroo\ wants\ to\ do.\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment2.params=
-comment2.target=Kangaroo()
-comment3.params=
-comment3.target=int\ getShotsFired()
-comment4.params=reloadTime
-comment4.target=void\ setGunReloadTime(int)
-comment5.params=
-comment5.target=void\ turnRight()
-comment5.text=turn\ the\ kangaroo\ 180\ also\ flips\ the\ image\ I\ dont\ know\ how\ to\ fix\ that
-comment6.params=
-comment6.target=void\ fire()
-numComments=7
+comment2.target=void\ fire()
+comment2.text=turn\ the\ kangaroo\ 180\ also\ flips\ the\ image\ I\ dont\ know\ how\ to\ fix\ that
+numComments=3

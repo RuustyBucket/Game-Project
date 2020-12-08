@@ -21,11 +21,15 @@ public class Bullet extends Simulation
         super(speed);
         setRotation(rotation);
         increaseSpeed(new Vector2D(rotation, 15));
+        getImage().scale(20, 20);
         //Greenfoot.playSound("EnergyGun.wav");
     }    
         
     public void act() {
-        
+        if (isGameLost()) {
+            stop();
+            transitionToGameLost();
+        }
         if(life <= 0) {
             getWorld().removeObject(this);
         } 
@@ -39,5 +43,25 @@ public class Bullet extends Simulation
                 life--;
             }
         }
+   
+    }
+    
+    
+    public boolean isGameLost() {
+        World world = getWorld();
+        if (isTouching(PlayableWombat.class)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    
+    public void transitionToGameLost() {
+        World GameLostScreen =  new  GameLostScreen();
+        Greenfoot.setWorld(GameLostScreen);
+    }
+    public void stop() {
+        
     }
 }

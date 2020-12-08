@@ -16,7 +16,7 @@ public class PlayableWombat extends Simulation
     public void act() {
         move();
     }
-
+   
     /**
      * To make the wombat movee
      */
@@ -45,5 +45,9 @@ public class PlayableWombat extends Simulation
             int ny = getY();
             setLocation(x, ny);
         }
+        //Bullet gun = new Bullet(); 
+       //if (isTouching(Bullet.class)) {
+        //    getWorld().removeObject(this);
+      // }
     }
-}
+} 

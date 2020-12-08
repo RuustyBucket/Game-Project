@@ -13,8 +13,9 @@ public class MyWorld extends World
      */
     public MyWorld() {
         super(1500, 800, 1);
-        backgroundMusic.playLoop();
+        
         prepare();
+        
     }
 
     /**
