@@ -21,7 +21,7 @@ public class PlayableWombat extends Simulation
     }
 
     /**
-     * To make the wombat move      
+     * To make the wombat move
      */
     public void move() {
        int x = 0;
@@ -43,12 +43,12 @@ public class PlayableWombat extends Simulation
             x += 7;
        }
        setLocation(getX() + x, getY() + y);
-       
+
        if (isTouching(Wall.class)) {
            setLocation(getX() - x, getY() - y);
        }
     }
-    
+
     public void fire() {
         Fireball fireball = new Fireball();
         getWorld().addObject(fireball, getX(), getY());

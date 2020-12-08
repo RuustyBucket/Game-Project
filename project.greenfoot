@@ -2,7 +2,7 @@
 class.Bullet.image=bullet.png
 class.Fireball.image=Fireball\ right.png
 class.GameLostScreen.image=EndGame.jpg
-class.Kangaroo.image=Scaled\ Mafia\ Kangaroo110.png
+class.Kangaroo.image=flipmafiakangaroo95.png
 class.MyWorld.image=Shitty\ Background.jpg
 class.PlayableWombat.image=ScaledAussieWombat85.png
 class.StartScreen.image=StartMenu.jpg
